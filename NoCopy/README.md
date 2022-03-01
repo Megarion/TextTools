@@ -1,11 +1,11 @@
-# Aggressify
-Turn text into angry messages
+# NOCOPY
+Program to convert strings to special Unicode characters in order to prevent people from copying and pasting the text easily.
 
 ### Demo website
-[Click here](https://megarion.github.io/TextTools/Aggressify/)
+[Click here](https://megarion.github.io/NOCOPY/)
 
 ### Source
 Script link:
 ```
-https://raw.githubusercontent.com/Megarion/TextTools/Aggressify/main/scripts/convert.js
+https://raw.githubusercontent.com/Megarion/NOCOPY/main/scripts/convert.js
 ```

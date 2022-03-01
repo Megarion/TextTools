@@ -4,10 +4,10 @@
 </html>
 
 <head>
-    <title>Aggressify</title>
-    <meta charset="utf-8">
-    <meta content="Aggressify" property="og:title">
-    <meta content="Turn text into aggressive and angry messages" property="og:description">
+    <title>No Copy</title>
+    <meta charset="UTF-8">
+    <meta content="NO COPY" property="og:title">
+    <meta content="Convert strings, sentences, or paragraphs into special unicode characters that doesn't behave like normal letters when pasted from clipboard" property="og:description">
     <!-- <meta content="" property="og:image"> -->
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -16,28 +16,27 @@
 
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
 
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <main class="container">
-        <h1>Aggressify</h1>
+        <h1>No Copy</h1>
         <article style="text-align: center;">
-            <textarea id="inputtext" style="resize: none; width: 95%; height: 200px; margin-right: 10px; font-family: Arial, Helvetica, sans-serif;" oninput="liveconvert()" placeholder="Enter normal string here..."></textarea>
-            <br><br>
-            <b><p>Converted text:</p></b>
-            <button onclick="navigator.clipboard.writeText(document.getElementById('outputtext').innerText);">Copy output to clipboard</button>
-            <span id="outputtext" style="text-align: center; height: 200px; margin-right: 10px; font-family: Arial, Helvetica, sans-serif;"></span>
+            <textarea id="inputtext" style="resize: none; width: 45%; height: 200px; margin-right: 10px;" oninput="liveconvert()" placeholder="Enter normal string here..."></textarea>
+            <textarea id="outputtext" style="resize: none; width: 45%; height: 200px;" disabled placeholder="Converted text goes here..."></textarea>
+            <br>
+            <button onclick="navigator.clipboard.writeText(document.getElementById('outputtext').value);">Copy output to clipboard</button>
         </article>
-        <p>Turn text into aggressive and angry messages.</p>
+        <p>Convert strings, sentences, or paragraphs into special unicode characters that doesn't behave like normal letters when pasted from clipboard.</p>
 
-        <a href="https://github.com/Megarion/TextTools/Aggressify">Source Code</a>
+        <a href="https://github.com/Megarion/NOCOPY">Source Code</a>
     </main>
 
     <script src="scripts/convert.js"></script>
     <script>
         function liveconvert(){
-            document.getElementById("outputtext").innerText = convert(document.getElementById("inputtext").value);
+            document.getElementById("outputtext").value = convert(document.getElementById("inputtext").value);
         }
     </script>
 </body>

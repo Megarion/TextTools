@@ -1,0 +1,24 @@
+:root {
+    --primary: #bd1ee5;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #22323d; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8b1ee5; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9d1bd1; 
+}
