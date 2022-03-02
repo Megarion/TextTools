@@ -1,7 +1,7 @@
 # NoCopy
 Program to convert strings to special Unicode characters in order to prevent people from copying and pasting the text easily.
 
-[Website](https://megarion.github.io/NoCopy/)
+[Website](https://megarion.github.io/TextTools/NoCopy/)
 
 ### Source
 Script link:
