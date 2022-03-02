@@ -7,12 +7,15 @@
     <title>No Copy</title>
     <meta charset="UTF-8">
     <meta content="NO COPY" property="og:title">
-    <meta content="Convert strings, sentences, or paragraphs into special unicode characters that doesn't behave like normal letters when pasted from clipboard" property="og:description">
+    <meta
+        content="Convert strings, sentences, or paragraphs into special unicode characters that doesn't behave like normal letters when pasted from clipboard"
+        property="og:description">
     <!-- <meta content="" property="og:image"> -->
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="description" content="content">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
 
@@ -23,19 +26,23 @@
     <main class="container">
         <h1>No Copy</h1>
         <article style="text-align: center;">
-            <textarea id="inputtext" style="resize: none; width: 45%; height: 200px; margin-right: 10px;" oninput="liveconvert()" placeholder="Enter normal string here..."></textarea>
-            <textarea id="outputtext" style="resize: none; width: 45%; height: 200px;" disabled placeholder="Converted text goes here..."></textarea>
+            <textarea id="inputtext" style="resize: none; width: 45%; height: 200px; margin-right: 10px;"
+                oninput="liveconvert()" placeholder="Enter normal string here..."></textarea>
+            <textarea id="outputtext" style="resize: none; width: 45%; height: 200px;" disabled
+                placeholder="Converted text goes here..."></textarea>
             <br>
-            <button onclick="navigator.clipboard.writeText(document.getElementById('outputtext').value);">Copy output to clipboard</button>
+            <button onclick="navigator.clipboard.writeText(document.getElementById('outputtext').value);">Copy output to
+                clipboard</button>
         </article>
-        <p>Convert strings, sentences, or paragraphs into special unicode characters that doesn't behave like normal letters when pasted from clipboard.</p>
+        <p>Convert strings, sentences, or paragraphs into special unicode characters that doesn't behave like normal
+            letters when pasted from clipboard.</p>
 
-        <a href="https://github.com/Megarion/NOCOPY">Source Code</a>
+        <a href="https://github.com/Megarion/TexTools/main/NoCopy/">Source Code</a>
     </main>
 
     <script src="scripts/convert.js"></script>
     <script>
-        function liveconvert(){
+        function liveconvert() {
             document.getElementById("outputtext").value = convert(document.getElementById("inputtext").value);
         }
     </script>
