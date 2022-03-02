@@ -6,5 +6,5 @@ Turn text into angry messages
 ### Source
 Script link:
 ```
-https://raw.githubusercontent.com/Megarion/TextTools/main/Aggressify/scripts/convert.js
+https://raw.githubusercontent.com/Megarion/TextTools/tree/main/Aggressify/scripts/convert.js
 ```

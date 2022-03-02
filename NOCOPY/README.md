@@ -6,5 +6,5 @@ Program to convert strings to special Unicode characters in order to prevent peo
 ### Source
 Script link:
 ```
-https://raw.githubusercontent.com/Megarion/TexTools/main/NoCopy/scripts/convert.js
+https://raw.githubusercontent.com/Megarion/TextTools/tree/main/NoCopy/scripts/convert.js
 ```
