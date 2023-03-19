@@ -7,10 +7,8 @@ function convert(str) {
     // Create output variable
     let output = str;
 
-    for (let i = 0; i < output.length; i++) {
-        for (let j = 0; j < rawdata[0].length; j++) {
-            output = output.replace(new RegExp(rawdata[0][j], 'g'), rawdata[1][j]);
-        }
+    for (let j = 0; j < rawdata[0].length; j++) {
+        output = output.replace(new RegExp(rawdata[0][j], 'g'), rawdata[1][j]);
     }
 
     // Return the converted string

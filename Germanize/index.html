@@ -2,11 +2,11 @@
 <html lang="en" data-theme="dark">
 
 <head>
-    <title>No Copy</title>
+    <title>Germanize</title>
     <meta charset="UTF-8">
-    <meta content="NO COPY" property="og:title">
+    <meta content="Germanize" property="og:title">
     <meta
-        content="Convert strings, sentences, or paragraphs into special unicode characters that doesn't behave like normal letters when pasted from clipboard"
+        content="haha funny german accent"
         property="og:description">
     <!-- <meta content="" property="og:image"> -->
 
@@ -22,7 +22,7 @@
 
 <body>
     <main class="container">
-        <h1>No Copy</h1>
+        <h1>Germanize</h1>
         <article style="text-align: center;">
             <textarea id="inputtext" style="resize: none; width: 45%; height: 200px; margin-right: 10px;"
                 oninput="liveconvert()" placeholder="Enter normal string here..."></textarea>
@@ -32,10 +32,8 @@
             <button onclick="navigator.clipboard.writeText(document.getElementById('outputtext').value);">Copy output to
                 clipboard</button>
         </article>
-        <p>Convert strings, sentences, or paragraphs into special unicode characters that doesn't behave like normal
-            letters when pasted from clipboard.</p>
 
-        <a href="https://github.com/Megarion/TextTools/tree/main/NOCOPY/">Source Code</a>
+        <i>Note: If you really want to voice this in a German accent, I would recommend watching a tutorial, not reading the converted text alone.</i>
     </main>
 
     <script src="scripts/convert.js"></script>
@@ -45,5 +43,5 @@
         }
     </script>
 </body>
-    
+
 </html>
