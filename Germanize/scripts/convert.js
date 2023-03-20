@@ -1,6 +1,6 @@
 let rawdata = [
-    ["TH", "Th", "th", "W", "w"],
-    ["Z",  "Z",  "z",  "V", "v"]
+    ["TH", "Th", "th", "tH", "S", "s"],
+    ["Z",  "Z",  "z",  "z",  "Z", "z"]
 ];
 
 let endingconvert = [
@@ -15,6 +15,11 @@ function convert(str) {
     for (const i in rawdata[0]) {
         output = output.replace(new RegExp(rawdata[0][i], 'g'), rawdata[1][i]);
     }
+    
+    output = output.replace(new RegExp("W([aeiou])", 'g'), "V$1");
+    output = output.replace(new RegExp("w([aeiou])", 'g'), "v$1");
+    output = output.replace(new RegExp("w([A-Za-z])([aeiou])", 'g'), "v$1$2");
+    output = output.replace(new RegExp("W([A-Za-z])([aeiou])", 'g'), "V$1$2");
 
     output = output.split(" ");
 
