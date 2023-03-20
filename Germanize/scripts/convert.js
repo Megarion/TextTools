@@ -16,10 +16,10 @@ function convert(str) {
         output = output.replace(new RegExp(rawdata[0][i], 'g'), rawdata[1][i]);
     }
     
-    output = output.replace(new RegExp("W([aeiou])", 'g'), "V$1");
-    output = output.replace(new RegExp("w([aeiou])", 'g'), "v$1");
-    output = output.replace(new RegExp("w([A-Za-z])([aeiou])", 'g'), "v$1$2");
-    output = output.replace(new RegExp("W([A-Za-z])([aeiou])", 'g'), "V$1$2");
+    output = output.replace(new RegExp("W([aeiouy])", 'g'), "V$1");
+    output = output.replace(new RegExp("w([aeiouy])", 'g'), "v$1");
+    output = output.replace(new RegExp("w([A-Za-z])([aeiouy])", 'g'), "v$1$2");
+    output = output.replace(new RegExp("W([A-Za-z])([aeiouy])", 'g'), "V$1$2");
 
     output = output.split(" ");
 
